@@ -1,6 +1,6 @@
 package be.kdg.team9.hivebuddy;
 
-import be.kdg.team9.hivebuddy.data.ArduinoDataReceiver;
+//import be.kdg.team9.hivebuddy.data.ArduinoDataReceiver;
 import com.fazecast.jSerialComm.SerialPort;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
