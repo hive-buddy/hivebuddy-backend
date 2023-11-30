@@ -1,14 +1,11 @@
 package be.kdg.team9.hivebuddy;
 
-<<<<<<< HEAD
 //import be.kdg.team9.hivebuddy.data.ArduinoDataReceiver;
-=======
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.List;
 
 import be.kdg.team9.hivebuddy.data.ArduinoDataReceiver;
->>>>>>> 8e603a3d869800e47a3ac041df4052ea93289670
 import com.fazecast.jSerialComm.SerialPort;
 import java.util.Timer;
 
