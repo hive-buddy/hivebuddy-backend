@@ -1,18 +1,13 @@
 package be.kdg.team9.hivebuddy;
 
+//import be.kdg.team9.hivebuddy.data.ArduinoDataReceiver;
 /*
 TODO: remove 4 commented lines below
  */
 
-//<<<<<<< HEAD
-////import be.kdg.team9.hivebuddy.data.ArduinoDataReceiver;
-//=======
-
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.List;
-
-//>>>>>>> 8e603a3d869800e47a3ac041df4052ea93289670
 
 import be.kdg.team9.hivebuddy.data.ArduinoDataReceiver;
 import com.fazecast.jSerialComm.SerialPort;
