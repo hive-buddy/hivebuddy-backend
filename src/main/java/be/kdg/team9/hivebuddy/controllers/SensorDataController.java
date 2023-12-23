@@ -1,17 +1,14 @@
 package be.kdg.team9.hivebuddy.controllers;
 
-import java.util.List;
-import java.util.Optional;
-
 import be.kdg.team9.hivebuddy.data.LoginDTO;
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
+import be.kdg.team9.hivebuddy.data.SensorData;
+import be.kdg.team9.hivebuddy.services.SensorDataServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import be.kdg.team9.hivebuddy.data.SensorData;
-import be.kdg.team9.hivebuddy.services.SensorDataServiceImpl;
+import java.util.List;
 
 
 @CrossOrigin(origins = "http://localhost:3000")
