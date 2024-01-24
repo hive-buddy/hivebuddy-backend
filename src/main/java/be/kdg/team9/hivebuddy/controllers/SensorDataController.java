@@ -46,13 +46,11 @@ public class SensorDataController {
     }
 
     @GetMapping(path = "/login/{hiveId}")
-//    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<String> login(@PathVariable Long hiveId) {
         if (sensorDataServiceImpl.checkHiveIdExists(hiveId)) {
             return ResponseEntity.ok("{\"status\":\"OK\"}");
         } else {
             return ResponseEntity.notFound().build();
         }
-//        return sensorDataServiceImpl.checkHiveIdExists(hiveId);
     }
 }

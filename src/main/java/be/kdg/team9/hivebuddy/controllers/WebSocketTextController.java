@@ -24,15 +24,6 @@ public class WebSocketTextController {
 
     @PostMapping("/send")
     public ResponseEntity<Void> sendMessage(@RequestBody SensorData sensorData) {
-//        TextMessageDTO textMessageDTO = new TextMessageDTO();
-//        textMessageDTO.setMessage(String.valueOf(sensorDataList.getValue()));
-//        String[][] realtimeData = new String[sensorDataList.size()][2];
-//        for (int i = 0; i < sensorDataList.size(); i++) {
-//            realtimeData[i][1] = String.valueOf(sensorDataList.get(i).getsensorTypeId());
-//            realtimeData[i][2] = String.valueOf(sensorDataList.get(i).getValue());
-//        }
-//        template.convertAndSend("/overview/"+sensorDataList.get(0).gethiveId(), realtimeData);
-//        template.convertAndSend("/overview/"+sensorDataList.get(0).gethiveId(), sensorDataList);
         template.convertAndSend("/topic/overview/1/1", sensorData);
         return new ResponseEntity<>(HttpStatus.OK);
     }
